@@ -1,0 +1,21 @@
+<svg width="800" height="160" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9">
+        <animate attributeName="stop-color" values="#6e40c9;#1f6feb;#6e40c9" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#1f6feb">
+        <animate attributeName="stop-color" values="#1f6feb;#6e40c9;#1f6feb" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="160" rx="16" fill="url(#bg)"/>
+  <text x="400" y="70" font-family="Segoe UI, sans-serif" font-size="34" font-weight="bold" fill="white" text-anchor="middle">
+    🚀 Supercharge Claude Code CLI
+    <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+  </text>
+  <text x="400" y="105" font-family="Segoe UI, sans-serif" font-size="18" fill="#e6e6e6" text-anchor="middle" opacity="0">
+    Fast setup • Single gateway • Terminal-ready
+    <animate attributeName="opacity" values="0;1" dur="1.2s" begin="0.4s" fill="freeze"/>
+  </text>
+</svg>
