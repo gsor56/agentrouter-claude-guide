@@ -1,60 +1,74 @@
-# 🚀 Supercharge Claude Code CLI with AgentRouter ($200 Free Credits!)
+<p align="center">
+  <img src="assets/banner.svg" alt="Claude Code + AgentRouter banner" width="800"/>
+</p>
 
-Welcome to the ultimate setup guide for pairing **Claude Code** with **AgentRouter**. 
-
-By following this guide, you will learn how to replace expensive API subscriptions with a single gateway and unlock $200 in free compute credits to use directly in your terminal.
-
-## 🌟 Why Use AgentRouter with Claude Code?
-*   **Unified Access:** AgentRouter is a non-profit AI API gateway that provides access to over 30 LLM providers (including Anthropic, OpenAI, and DeepSeek) through a single endpoint.
-*   **No Credit Card Required:** You can sign up using just your GitHub account.
-*   **Massive Free Tier:** While standard signups receive $100 in credits, using a referral link grants you **$200 in free API credits**.
-*   **Drop-In Replacement:** It is fully compatible with the official Claude Code client.
+<p align="center">
+  <em>Set up Claude Code CLI with AgentRouter and claim $200 in free credits.</em>
+</p>
 
 ---
 
-## 🛠️ Step 1: Claim Your $200 Free API Credits
-To get the maximum free tier, you must use a referral link. 
+> **Disclosure:** The signup link below is my referral link — I receive a benefit when you use it. Standard signups get $100 in credits; the referral link is what unlocks $200.
+>
+> **Security note:** Once you set `ANTHROPIC_API_KEY` / `ANTHROPIC_BASE_URL` to a third-party gateway, that provider can see and log every request you send through Claude Code. Don't reuse a key tied to sensitive projects, and review AgentRouter's terms and privacy practices yourself before proceeding.
 
-1.  Click here to register: **[Claim $200 AgentRouter Credits](https://agentrouter.org/register?aff=Hv0y)**
-2.  Sign in using your GitHub account (No credit card required).
-3.  Once logged in, navigate to `https://agentrouter.org/console/token` to generate your new API Key. Keep this key secret and safe!
+## 🌟 Why Use AgentRouter with Claude Code?
 
-## 💻 Step 2: Install Node.js & Claude Code
-Claude Code is a powerful command-line interface (CLI) tool created by Anthropic that allows you to interact with AI directly in your coding environment.
+* **Unified Access:** AgentRouter is an API gateway providing access to 30+ LLM providers (Anthropic, OpenAI, DeepSeek, and others) through a single endpoint.
+* **No Credit Card Required:** Sign up using just your GitHub account.
+* **Free Tier:** Standard signups receive $100 in credits; using the referral link below grants **$200**.
+* **Drop-In Replacement:** Compatible with the official Claude Code client via environment variables.
 
-1.  **Install Node.js:** Claude Code requires Node.js version 18 or higher. If you don't have it, download it from [nodejs.org](https://nodejs.org).
-2.  **Install Claude Code:** Open your terminal or command prompt and run the following command to install the CLI globally:
-    ```bash
-    npm install -g @anthropic-ai/claude-code
-    ```
-3.  **Verify Installation:** Check that it installed correctly by running:
-    ```bash
-    claude --version
-    ```
+---
 
-## 🔗 Step 3: Configure the AgentRouter Endpoint
-By default, Claude Code tries to connect to Anthropic's official paid API. We need to point it to AgentRouter's free endpoint instead by setting up environment variables.
+## <img src="assets/step1.svg" width="28" valign="middle"/> Step 1: Claim Your Free API Credits
 
-### For macOS and Linux users:
-Add these lines to your `~/.bashrc` or `~/.zshrc` file:
+1. Register here: **[Claim $200 AgentRouter Credits](https://agentrouter.org/register?aff=Hv0y)**
+2. Sign in with your GitHub account (no credit card required).
+3. Generate an API key at `https://agentrouter.org/console/token`. Treat this key like a password — keep it secret.
+
+## <img src="assets/step2.svg" width="28" valign="middle"/> Step 2: Install Node.js & Claude Code
+
+Claude Code is Anthropic's official command-line coding assistant.
+
+1. **Install Node.js 18+** from [nodejs.org](https://nodejs.org) if you don't already have it.
+2. **Install Claude Code:**
+   ```bash
+   npm install -g @anthropic-ai/claude-code
+   ```
+3. **Verify:**
+   ```bash
+   claude --version
+   ```
+
+## <img src="assets/step3.svg" width="28" valign="middle"/> Step 3: Point Claude Code at AgentRouter
+
+By default, Claude Code talks to Anthropic's official API. To route through AgentRouter instead, set two environment variables.
+
+**macOS / Linux** — add to `~/.bashrc` or `~/.zshrc`:
 ```bash
-export ANTHROPIC_BASE_URL=[https://agentrouter.org/](https://agentrouter.org/)
-export ANTHROPIC_API_KEY=sk-your-agentrouter-key-here
+export ANTHROPIC_BASE_URL="https://agentrouter.org/"
+export ANTHROPIC_API_KEY="sk-your-agentrouter-key-here"
 ```
-## For Windows (PowerShell) users:
-Run these commands in PowerShell as an administrator:
-```bash
+
+**Windows (PowerShell, as administrator):**
+```powershell
 setx ANTHROPIC_BASE_URL "https://agentrouter.org/"
 setx ANTHROPIC_API_KEY "sk-your-agentrouter-key-here"
 ```
-(Note: You will need to restart your terminal for the changes to take effect).
 
-# 🎯 Step 4: Start Coding!
-You are all set! Open your terminal, navigate to any of your project folders, and simply type:
+Restart your terminal for changes to take effect.
+
+## <img src="assets/step4.svg" width="28" valign="middle"/> Step 4: Start Coding
+
 ```bash
 claude
 ```
-You now have a powerful AI coding assistant in your terminal, fully powered by your free AgentRouter credits.
 
-#🤝 Need Help?
-If you run into any issues during the setup process, feel free to open an issue on this repository or ask me anything in the comments of my YouTube video. I will try my best to help you out!
+You're set — Claude Code is now running against your AgentRouter credits.
+
+---
+
+## 🤝 Need Help?
+
+Open an issue on this repo, or leave a comment on my YouTube video — I'll do my best to help.
