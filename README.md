@@ -56,6 +56,19 @@ export ANTHROPIC_API_KEY="sk-your-agentrouter-key-here"
 setx ANTHROPIC_BASE_URL "https://agentrouter.org/"
 setx ANTHROPIC_API_KEY "sk-your-agentrouter-key-here"
 ```
+**In VS Code(Windows)
+```bash
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://agentrouter.org/",
+    "ANTHROPIC_AUTH_TOKEN": "sk-YOUR-API-KEY",
+    "ANTHROPIC_API_KEY": "",
+    "ANTHROPIC_MODEL": "YOUR-MODEL-NAME"
+  },
+  "model": "claude-opus-4-8",
+  "skipDangerousModePermissionPrompt": true
+}
+```
 
 Restart your terminal for changes to take effect.
 
