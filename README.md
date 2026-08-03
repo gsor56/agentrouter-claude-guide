@@ -84,4 +84,4 @@ You're set — Claude Code is now running against your AgentRouter credits.
 
 ## 🤝 Need Help?
 
-Open an issue on this repo, or leave a comment on my YouTube video — I'll do my best to help.
+Open an issue on this repo, or leave a comment on my platform where this is posted — I'll do my best to help.
