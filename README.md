@@ -85,3 +85,12 @@ You're set — Claude Code is now running against your AgentRouter credits.
 ## 🤝 Need Help?
 
 Open an issue on this repo, or leave a comment on my platform where this is posted — I'll do my best to help.
+
+### Bonus TIP (WINDOWS VS CODE)
+### For Windows Users (via settings.json)
+If you prefer to use the configuration file instead of PowerShell commands, you can edit Claude Code's settings directly inside VS Code:
+
+1. Open your VS Code terminal by pressing `` Ctrl + ` ``.
+2. Run this command to open your global Claude Code settings file:
+   ```bash
+   code ~/.claude/settings.json
