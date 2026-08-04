@@ -8,7 +8,7 @@
 
 ---
 
-> **Disclosure:** The signup link below is my referral link — I receive a benefit when you use it. Standard signups get $100 in credits; the referral link is what unlocks $200.
+> **Disclosure:** Standard signups get $100 in credits; the link is what unlocks $200.
 >
 > **Security note:** Once you set `ANTHROPIC_API_KEY` / `ANTHROPIC_BASE_URL` to a third-party gateway, that provider can see and log every request you send through Claude Code. Don't reuse a key tied to sensitive projects, and review AgentRouter's terms and privacy practices yourself before proceeding.
 
